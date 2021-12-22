@@ -20,7 +20,7 @@ io.on("connection", (socket) => {
         const index = getRandomInt(data.length)
         console.log(index)
         socket.emit("time", data[Math.floor(Math.random() * data.length)]);
-    }, 1000);
+    }, 6000);
 });
 
 http.listen(port, () => {
